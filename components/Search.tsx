@@ -9,7 +9,7 @@ export default function Search() {
 
   return (
     <div>
-      <input onChange={(e) => setQuery(e.target.value)} placeholder="Search.." />
+      <input onChange={(e) => setQuery(e.target.value)} placeholder="Search" />
       {filtered.map(post => <div key={post.slug}>{post.title}</div>)}
     </div>
   );
